@@ -1,0 +1,50 @@
+@import './variables';
+@import './templates';
+
+.header__nav{
+    border-bottom: 1px solid #ECECEC;
+    align-items: center;
+    @extend .justify__between;
+    padding: 24px ;
+    
+}
+
+.connect{
+    &__underline:hover::after{
+        content: "";
+        border-bottom: 4px solid $--blue-color;
+        border-radius: 2px;
+        position: absolute;
+        top: 35px;
+        width: 100%;
+        left: 0px;
+    }
+    &__pag{
+        color: $--black-color;
+    }
+    &__pag--active{
+        color: $--blue-color;
+    }
+}
+
+.webstudio-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: $--blue-color;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 14px;
+}
+
+.header--info{
+    &__social{
+        fill: $--gray-clor;
+        color: $--gray-clor;
+    }
+
+    &__icon{
+        width: 16px;
+        height: 10px;
+    }
+}

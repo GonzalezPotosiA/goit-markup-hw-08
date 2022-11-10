@@ -1,0 +1,10 @@
+@mixin select_colors($background, $fill, $color) {
+    background-color: $background;
+    fill: $fill;
+    color: $color;
+}
+
+@mixin select_measures($width, $height) {
+    width: $width;
+    height: $height;
+}
