@@ -9,7 +9,7 @@
 
 .container__main {
 
-    @include select_measures(1600px, none);
+    // @include select_measures(1600px, none);
     // width: 1600px;
     margin: 0 auto;
     padding: 0 15px;
@@ -20,7 +20,7 @@
 /* clase auxiliar */
 
 .container{
-    @include select_measures(1200px, none);
+    // @include select_measures(1200px, none);
     margin:0 auto;
 }
 
@@ -36,7 +36,6 @@
 .subtitle {
     
     font-weight: 500;
-    font-size: 14px;
     line-height: 16px;
     text-decoration: none;
     text-align: center;
@@ -47,6 +46,7 @@
 
 .link{
     margin: 10px;
+    // font-size: 20px;
     &:hover{
         @include select_colors(none,$--blue-color ,$--blue-color);
     }
@@ -59,10 +59,14 @@
     font-family: $--font-main;
     font-size: 36px;
     font-weight: 700;
-    line-height: 16px;
+    
     color: $--black-color;
     margin: 0;
 }
+
+// menu hamburguesa
+
+
 /*Clases del main*/
 
 .main{
@@ -96,6 +100,7 @@
         font-size: 16px;
         line-height: 30px;
         border: rgba(162, 170, 166, 0.658) solid 2px;
+        margin-top: 2%;
         
 
         &:hover{
@@ -119,15 +124,16 @@
         /*Ubicacion flex*/
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     &__paragraph{
-        @include select_measures(270px, none);
+        @include select_measures(450px, none);
     
     }
 
     &__img{
-        @include select_measures(270px, 120px);
+        // @include select_measures(270px, 120px);
         text-align: center;
         background-color: $--white-color;
     }
@@ -144,6 +150,7 @@
     &__title{
         text-transform: uppercase;
         font-size: 14px;
+        text-align: center;
         font-weight: 700;
         line-height: 16px;
         color: $--black-color;
@@ -162,10 +169,12 @@
 .images{
     &__container{
         position: relative; 
-        @include select_measures(370px, 294px);
+        @include select_measures(100%, none);
+        margin-bottom: 2%;
     }
     &__tecnology{
         object-fit: cover;
+        width: 100%;
     }
     &__text{
 
@@ -191,6 +200,7 @@
 .enginner{
     &__container{
         @extend .justify__between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         padding-top: 5%;
     }
@@ -202,7 +212,7 @@
     }
     
     &__image{
-        @include select_measures(270px, none);
+        @include select_measures(100%, none);
         
     }
     &__title{
@@ -267,6 +277,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 4px;
+        margin-bottom: 2%;
 
         &:hover{
             border-color:  $--blue-color;
