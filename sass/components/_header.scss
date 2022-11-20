@@ -6,7 +6,7 @@
         border-bottom: 1px solid #ECECEC;
         align-items: center;
         @extend .justify__between;
-        padding: 24px ;
+        padding: 2% ;
     }
     &__navegation{
         cursor: pointer;
@@ -57,6 +57,9 @@
     
         }
 
+    &--info{
+        display: none;
+    }
     &--info__icon{
         display: none;
     }
@@ -85,6 +88,9 @@
     //     left: 0px;
     // }
 
+    &__links{
+        display: none;
+    }
     &__pag{
         color: $--black-color;
         font-size: 20px;
@@ -119,4 +125,52 @@
         width: 16px;
         height: 10px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    // header
+    .link{
+        margin: 0px;
+    }
+    .header {
+        
+        &__hamburguer {
+            display: none;
+        }
+        &__nav{
+            padding: 1%;;
+        }
+        &--info{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &--info__social{
+            font-size: 12px;
+        }
+
+    }
+
+    .connect{
+        display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+            &__links {
+                    display: block;
+                    display: flex;
+                    justify-content: space-around;
+                }
+        
+            &__underline {
+                font-size: 14px;
+            }
+    }
+
+    .webstudio-title{
+        font-size: 20px;
+    }
+
+    
 }

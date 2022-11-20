@@ -128,7 +128,7 @@
     }
 
     &__paragraph{
-        @include select_measures(450px, none);
+        @include select_measures(100%, none);
     
     }
 
@@ -159,11 +159,19 @@
 
 /*titulo para la seccion de imagenes*/
 
-.tecnologies__image{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 5%;
+.tecnologies{
+
+    &__section{
+        display: none;
+    }
+
+    &__image{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 5%;
+    }
+    
 }
 
 .images{
@@ -266,6 +274,7 @@
     &__container{
         @extend .justify__between;
         flex-direction: row;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 5% 0%;
     }
@@ -537,5 +546,84 @@
     }
 }
 
+@media screen and (min-width:480px) {
+
+   
+    .advantage__paragraph {
+        width: 47%;
+        height: none;
+    }
+    .enginner {
+       
+        &__features{
+            width: 47%;
+            margin: 10px 0px;
+        }
+        
+    }
+    .customer__box{
+        width: 30%;
+    }
+
+    .footer{
+        &__address, &__networks--box{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .link{
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        @include select_measures(1150px, none);
+    }
+    .advantage__paragraph {
+        @include select_measures(22%, none);
+        margin: 0px 10px;
+    }
+    .enginner {
+       &__container{
+        justify-content: space-between;
+       }
+        &__features{
+            width: 23%;
+        }
+        
+        
+    }
+    .customer{
+
+        &__container{
+            justify-content: space-between;
+        }
+        &__box{
+            width: 15%;
+        }
+        
+    }
+
+    .footer{
+        &__section{
+            justify-content: space-between;
+        }
+        &__address, &__networks--box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        &__form{
+            text-align: start;
+        }
+    }
+    .footer__address, .footer__networks--box, .footer__networks--box{
+        width: auto;
+    }
+}
 
 

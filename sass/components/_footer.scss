@@ -8,8 +8,8 @@
         padding: 2% 2%;
         /*Ubicacion flex*/
         @extend .justify__between;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
+        // align-items: center;
         text-align: center;
         flex-wrap: wrap;
     }
@@ -43,7 +43,7 @@
     &__base{
         border-radius: 50%;
         background-color:  rgba(255, 255, 255, 0.1);
-        margin-right: 6px;
+        margin: 0px 1%;
 
         &:hover{
             background-color: $--blue-color;
@@ -68,3 +68,4 @@
     padding-left: 5%;
     color: $--white-color;
 }
+
