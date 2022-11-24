@@ -27,6 +27,7 @@
                 border-radius: 4px;
                 background-color: $--white-color;
                 display: none;
+                z-index: 1;
             }
 
             &:checked + &--options{
@@ -114,6 +115,8 @@
 }
 
 .header--info{
+        fill: $--gray-clor;
+        color: $--gray-clor;
     &__social{
         fill: $--gray-clor;
         color: $--gray-clor;
@@ -145,16 +148,22 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            &__icon{
+                display: block;
+            }
         }
         &--info__social{
             font-size: 12px;
+            display: flex;
+            align-items: center;
         }
 
     }
 
     .connect{
+        width: 63%;
         display: flex;
-            justify-content: space-around;
+        justify-content: space-between;
             align-items: center;
         
             &__links {
@@ -166,6 +175,16 @@
             &__underline {
                 font-size: 14px;
             }
+
+            &__underline:hover::after {
+                content: "";
+                border-bottom: 4px solid $--blue-color;
+                border-radius: 2px;
+                position: absolute;
+                top: 35px;
+                width: 100%;
+                left: 0px;
+            }
     }
 
     .webstudio-title{
@@ -173,4 +192,35 @@
     }
 
     
+}
+
+@media screen and(min-width:1200px) {
+    .webstudio-title {
+        font-size: 26px;
+    }
+
+    .header--info {
+        flex-direction: row;
+
+
+        align-items: center;
+
+        &__icon {
+            display: block;
+            @include select_measures(16px, 12px);
+        }
+
+        &__social {
+            font-size: 14px;
+            
+        }
+    }
+
+    .connect {
+        justify-content: flex-start;
+
+        &__links {
+            margin-left: 20%;
+        }
+    }
 }

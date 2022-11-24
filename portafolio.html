@@ -27,25 +27,77 @@
 
         <div class="connect">
             <a class="webstudio-title link" href="">WebStudio</a>
-            <a class="connect__underline connect__pag link subtitle" href="index.html">Estudio</a>
-            <a class="connect__underline connect__pag--active link subtitle" href="">Portafolio</a>
-            <a class="connect__underline connect__pag link subtitle" href="contactos.html">Contáctanos</a>
+            <div class="connect__links">
+                <a class="connect__underline connect__pag link subtitle" href="index.html">Estudio</a>
+                <a class="connect__underline connect__pag--active link subtitle" href="">Portafolio</a>
+                <a class="connect__underline connect__pag link subtitle" href="contactos.html">Contáctanos</a>
+            </div>        
         </div>
-
-
+        
         <div class="header--info">
-            <a class="header--info__social link subtitle" href="">
-                <svg class="header--info__icon">
-                    <use href="./images/svg/symbol-defs.svg#icon-mail2"></use>
-                </svg>
-                info@devstudio.com
-            </a>
+           
+                
+                <a class="header--info__social link subtitle" href="">
+                    <svg class="header--info__icon">
+                        <use href="./images/svg/symbol-defs.svg#icon-mail2"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            
+            
             <a class="header--info__social link subtitle" href="">
                 <svg class="header--info__icon">
                     <use href="./images/svg/symbol-defs.svg#icon-mobile"></use>
                 </svg>
                 +52 55 5529 6000
             </a>
+        </div>
+
+
+        <div class="header__hamburguer">
+
+            <!-- menu de hamburguesa -->
+            <label for="header__menu" class="header__navegation">
+                <svg class="header__svg--nav">
+                    <use href="./images/svg/Mobile First/mobile-defs.svg#icon-men_24px"></use>
+                </svg>
+            </label>
+
+            <input type="checkbox" id="header__menu" class="header__menu">
+
+            <div class="header__menu--options">
+
+                <div class="header__menu--pag">
+                    <a class="connect__underline connect__pag link subtitle" href="index.html">Estudio</a>
+                    <a class="connect__underline connect__pag--active link subtitle" href="">Portafolio</a>
+                    <a class="connect__underline connect__pag link subtitle" href="contactos.html">Contáctanos</a>
+                </div>
+                
+                <div class="header__menu--info">
+
+                    <div class="header__menu--links">
+                        <a class="header--info__social link " href="">
+                            info@devstudio.com
+                        </a>
+                        
+                        <a class="header--info__social link " href="">
+                            +52 55 5529 6000
+                        </a>
+                        
+                    </div>
+
+                    <div class="header__networks">
+                        <a href="" class="header__networks--item ">Instagram</a>
+                        <a href="" class="header__networks--item ">Twitter</a>
+                        <a href="" class="header__networks--item ">Facebook</a>
+                        <a href="" class="header__networks--item ">Linkedin</a>
+                    </div>
+                                              
+                </div>      
+
+                 
+            </div>
+
         </div>
 
     </nav>
