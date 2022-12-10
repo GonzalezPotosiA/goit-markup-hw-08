@@ -19,8 +19,7 @@
                 top: 80px;
                 bottom: 0px;
                 right: 0;
-                width: 330px;
-                height: 390px;
+                @include select_measures(330px, 390px);
                 padding: 2%;
                 //border: 1px solid $--gray-clor;
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -125,8 +124,8 @@
     }
 
     &__icon{
-        width: 16px;
-        height: 10px;
+        @include select_measures(16px, 10px);
+
     }
 }
 
@@ -161,7 +160,7 @@
     }
 
     .connect{
-        width: 63%;
+        @include select_measures(63%, none);
         display: flex;
         justify-content: space-between;
             align-items: center;
@@ -182,7 +181,7 @@
                 border-radius: 2px;
                 position: absolute;
                 top: 35px;
-                width: 100%;
+                @include select_measures(100%, none);
                 left: 0px;
             }
     }

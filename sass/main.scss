@@ -60,7 +60,6 @@
     font-family: $--font-main;
     font-size: 36px;
     font-weight: 700;
-
     color: $--black-color;
     margin: 0;
 }
@@ -71,9 +70,13 @@
 /*Clases del main*/
 
 .main {
+
     &__section {
         /*fondo con multicapa*/
+
         background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../images/back-main.png);
+
+
         background-size: cover;
         background-repeat: no-repeat;
         color: $--white-color;
@@ -178,13 +181,13 @@
 .images {
     &__container {
         position: relative;
-        @include select_measures(100%, none);
+        @include select_measures(30%, none);
         margin-bottom: 2%;
     }
 
     &__tecnology {
         object-fit: cover;
-        width: 100%;
+        @include select_measures(100%, none);
     }
 
     &__text {
@@ -538,7 +541,7 @@
     padding: 2%;
     cursor: pointer;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    width: 100%;
+    @include select_measures(100%, none);
     border-radius: 4px;
     resize: none;
 
@@ -561,9 +564,10 @@
 
 .form_submit {
 
-    &--box{
+    &--box {
         display: flex;
     }
+
     @include select_measures(80%, 50px);
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -584,16 +588,14 @@
 
 
     .advantage__paragraph {
-        // width: 47%;
-        // height: none;
-        width: 450px;
+        @include select_measures(450px, none);
     }
 
     .enginner {
 
         &__features {
-            // width: 47%;
-            width: 450px;
+            
+            @include select_measures(450px, none);
             margin: 10px 0px;
         }
 
@@ -608,8 +610,8 @@
 
     .form {
         &_box {
-            width: 450px;
-            height: 609px;
+            @include select_measures(450px, 609px);
+            
 
         }
     }
@@ -622,15 +624,15 @@
     }
 
     .advantage__paragraph {
-        width: 350px;
+        @include select_measures(350px, none);
     }
 
     .enginner__features {
-        width: 350px;
+        @include select_measures(350px, none);
     }
 
     .customer__box {
-        width: 30%;
+        @include select_measures(30%, none);
     }
 
     .button__container {
@@ -638,7 +640,7 @@
     }
 
     .publicity__box--img {
-        width: 345px;
+        @include select_measures(345px, none);
     }
 }
 
@@ -646,10 +648,21 @@
     .container {
         @include select_measures(1150px, none);
     }
-
+    .main__button.footer__button{
+      
+            @include select_measures(40%, none);
+        margin-top: 0%;
+    }
     .advantage__paragraph {
         @include select_measures(22%, none);
         margin: 0px 10px;
+    }
+
+    .tecnologies {
+        &__section {
+            display: block;
+        }
+
     }
 
     .enginner {
@@ -659,7 +672,7 @@
 
         &__features {
             max-width: 23%;
-           
+
         }
 
     }
@@ -671,7 +684,7 @@
         }
 
         &__box {
-            width: 15%;
+            @include select_measures(15%, none);
         }
 
     }

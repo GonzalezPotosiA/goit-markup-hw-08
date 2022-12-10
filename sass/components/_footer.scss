@@ -60,8 +60,7 @@
 /*Formulario del pie de pagina*/
 
 .suscrption_email{
-    width: 100%;
-    height: 50px;
+    @include select_measures(100%,50px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: #2F303A;
@@ -72,7 +71,7 @@
 @media screen and (min-width:480px) {
     .footer{
         &__address, &__networks--box{
-            width: 50%;
+            @include select_measures(50%, none);
         }
     }
 }
@@ -91,9 +90,18 @@
         &__form{
             text-align: start;
         }
+        &__input{
+            @include select_measures(400px, none);
+            justify-content: start;
+        }
+        
     }
     .footer__address, .footer__networks--box, .footer__networks--box{
         width: auto;
     }
     
+    .suscrption_email{
+        @include select_measures(55%, none);
+        
+    }
 }

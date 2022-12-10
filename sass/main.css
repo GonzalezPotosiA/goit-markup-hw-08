@@ -132,6 +132,7 @@
   }
   .connect {
     width: 63%;
+    height: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,6 +152,7 @@
     position: absolute;
     top: 35px;
     width: 100%;
+    height: none;
     left: 0px;
   }
   .webstudio-title {
@@ -246,6 +248,7 @@
 @media screen and (min-width: 480px) {
   .footer__address, .footer__networks--box {
     width: 50%;
+    height: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -260,8 +263,17 @@
   .footer__form {
     text-align: start;
   }
+  .footer__input {
+    width: 400px;
+    height: none;
+    justify-content: start;
+  }
   .footer__address, .footer__networks--box, .footer__networks--box {
     width: auto;
+  }
+  .suscrption_email {
+    width: 55%;
+    height: none;
   }
 }
 /*Elemento contenedor*/
@@ -399,7 +411,7 @@
 
 .images__container {
   position: relative;
-  width: 100%;
+  width: 30%;
   height: none;
   margin-bottom: 2%;
 }
@@ -407,6 +419,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: none;
 }
 .images__text {
   width: 100%;
@@ -711,6 +724,7 @@
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
+  height: none;
   border-radius: 4px;
   resize: none;
 }
@@ -752,9 +766,11 @@
 @media screen and (min-width: 480px) {
   .advantage__paragraph {
     width: 450px;
+    height: none;
   }
   .enginner__features {
     width: 450px;
+    height: none;
     margin: 10px 0px;
   }
   .form_container--box {
@@ -772,18 +788,22 @@
   }
   .advantage__paragraph {
     width: 350px;
+    height: none;
   }
   .enginner__features {
     width: 350px;
+    height: none;
   }
   .customer__box {
     width: 30%;
+    height: none;
   }
   .button__container {
     justify-content: center;
   }
   .publicity__box--img {
     width: 345px;
+    height: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -791,10 +811,18 @@
     width: 1150px;
     height: none;
   }
+  .main__button.footer__button {
+    width: 40%;
+    height: none;
+    margin-top: 0%;
+  }
   .advantage__paragraph {
     width: 22%;
     height: none;
     margin: 0px 10px;
+  }
+  .tecnologies__section {
+    display: block;
   }
   .enginner__container {
     justify-content: space-between;
@@ -807,5 +835,6 @@
   }
   .customer__box {
     width: 15%;
+    height: none;
   }
 }/*# sourceMappingURL=main.css.map */
